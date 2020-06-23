@@ -4,7 +4,9 @@ There are two folders:
 
   code: contains code for concept name transformation and missing IS-A relations identification for source terminologies of the UMLS.
   
-    conceptNameTransformation.py    Given a concept name in the UMLS, we first identify its base and secondary noun chunks. For each identified noun chunk, we generate replacement candidates which are more general than the noun chunk. Then we replace the noun chunks with their replacement candidates to generate new potential concept names which may serve as supertypes of the original concept. If a newly generated name is an existing concept name in the same source terminology with the original concept, then we consider there is a potentially missing IS-A relation between the original and new concepts.
+    conceptNameTransformation.py   
+
+Given a concept name in the UMLS, we first identify its base and secondary noun chunks. For each identified noun chunk, we generate replacement candidates which are more general than the noun chunk. Then we replace the noun chunks with their replacement candidates to generate new potential concept names which may serve as supertypes of the original concept. If a newly generated name is an existing concept name in the same source terminology with the original concept, then we consider there is a potentially missing IS-A relation between the original and new concepts.
     
   supplementFile: contains two evaluation files.
   
